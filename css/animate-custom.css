@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/*!
+ * animate-custom.css - https://animate.style/
+ * version - 1.0.0
+ *
+ *
+ */
+
+/* this changes all the animations globally */
+:root {
+
+    --animate-duration: 1.5s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+}
+
+ /* this only changes this particular animation duration */
+.animate__animated.animate__bounce {
+
+    --animate-duration: 1.5s;
+}
+
+/* custom animations */
+.animate__customanimation_01 {
+
+    animation: customanimation_01;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+@keyframes customanimation_01 {
+
+    from {
+        
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+    50% {
+        
+        opacity: 0.5;
+    }
+    
+    to {
+        
+        opacity: 0;
+        transform: translateY(400px);
+    }
+}
