@@ -2,8 +2,8 @@
 /**
 * Plugin Name: animate.css
 * Plugin URI: https://animate.style/
-* Description: a WordPress plugin for the animate.css library, with custom scrolling integration.
-* Version: 1.0
+* Description: a wordpress plugin to install the animate.css library, with custom scrolling integration.
+* Version: 1.1
 * Author: Jake Price | JP Creative Media
 * Author URI: https://jpcreativemedia.ca/
 **/
@@ -30,4 +30,3 @@ function animate_enqueue_scripts() {
     wp_register_script('scrollObserver-custom', plugin_dir_url( __FILE__ ) . 'js/scrollObserver-custom.js', 1.0, false);
     wp_enqueue_script('scrollObserver-custom');
 }
-?>

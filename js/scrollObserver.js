@@ -9,7 +9,7 @@ let prevratio = 0.0;
 let observeroptions = {
     
     root: null,
-    rootmargin: "-100px 0px -100px 0px",
+    rootmargin: "0px",
     threshold: buildthresholdlist()
 };
 
@@ -54,64 +54,64 @@ let observerrepeat_infinite = new IntersectionObserver(repeat_infinite, observer
 // targets
 
 // delay
-document.querySelectorAll('[data-as-delay="2000"]').forEach(element => {
+document.querySelectorAll('[data-ani-delay="2000"]').forEach(element => {
 
     observerdelay_2s.observe(element);
 });
 
-document.querySelectorAll('[data-as-delay="3000"]').forEach(element => {
+document.querySelectorAll('[data-ani-delay="3000"]').forEach(element => {
 
     observerdelay_3s.observe(element);
 });
 
-document.querySelectorAll('[data-as-delay="4000"]').forEach(element => {
+document.querySelectorAll('[data-ani-delay="4000"]').forEach(element => {
 
     observerdelay_4s.observe(element);
 });
 
-document.querySelectorAll('[data-as-delay="5000"]').forEach(element => {
+document.querySelectorAll('[data-ani-delay="5000"]').forEach(element => {
 
     observerdelay_5s.observe(element);
 });
 
 // duration
-document.querySelectorAll('[data-as-duration=slow]').forEach(element => {
+document.querySelectorAll('[data-ani-duration=slow]').forEach(element => {
 
     observerslow.observe(element);
 });
 
-document.querySelectorAll('[data-as-duration=slower]').forEach(element => {
+document.querySelectorAll('[data-ani-duration=slower]').forEach(element => {
 
     observerslower.observe(element);
 });
 
-document.querySelectorAll('[data-as-duration=fast]').forEach(element => {
+document.querySelectorAll('[data-ani-duration=fast]').forEach(element => {
 
     observerfast.observe(element);
 });
 
-document.querySelectorAll('[data-as-duration=faster]').forEach(element => {
+document.querySelectorAll('[data-ani-duration=faster]').forEach(element => {
 
     observerfaster.observe(element);
 });
 
 // repeat
-document.querySelectorAll('[data-as-repeat="1"]').forEach(element => {
+document.querySelectorAll('[data-ani-repeat="1"]').forEach(element => {
 
     observerrepeat_1.observe(element);
 });
 
-document.querySelectorAll('[data-as-repeat="2"]').forEach(element => {
+document.querySelectorAll('[data-ani-repeat="2"]').forEach(element => {
 
     observerrepeat_2.observe(element);
 });
 
-document.querySelectorAll('[data-as-repeat="3"]').forEach(element => {
+document.querySelectorAll('[data-ani-repeat="3"]').forEach(element => {
 
     observerrepeat_3.observe(element);
 });
 
-document.querySelectorAll('[data-as-repeat=infinite]').forEach(element => {
+document.querySelectorAll('[data-ani-repeat=infinite]').forEach(element => {
 
     observerrepeat_infinite.observe(element);
 });
@@ -365,502 +365,502 @@ let observerslideoutup = new IntersectionObserver(slideoutup, observeroptions);
 // targets
 
 // attention seekers
-document.querySelectorAll('[data-as=bounce]').forEach(element => {
+document.querySelectorAll('[data-ani=bounce]').forEach(element => {
 
     observerbounce.observe(element);
 });
 
-document.querySelectorAll('[data-as=flash]').forEach(element => {
+document.querySelectorAll('[data-ani=flash]').forEach(element => {
 
     observerflash.observe(element);
 });
 
-document.querySelectorAll('[data-as=pulse]').forEach(element => {
+document.querySelectorAll('[data-ani=pulse]').forEach(element => {
 
     observerpulse.observe(element);
 });
 
-document.querySelectorAll('[data-as=rubberband]').forEach(element => {
+document.querySelectorAll('[data-ani=rubberband]').forEach(element => {
 
     observerrubberband.observe(element);
 });
 
-document.querySelectorAll('[data-as=shakex]').forEach(element => {
+document.querySelectorAll('[data-ani=shakex]').forEach(element => {
 
     observershakex.observe(element);
 });
 
-document.querySelectorAll('[data-as=shakey]').forEach(element => {
+document.querySelectorAll('[data-ani=shakey]').forEach(element => {
 
     observershakey.observe(element);
 });
 
-document.querySelectorAll('[data-as=headshake]').forEach(element => {
+document.querySelectorAll('[data-ani=headshake]').forEach(element => {
 
     observerheadshake.observe(element);
 });
 
-document.querySelectorAll('[data-as=swing]').forEach(element => {
+document.querySelectorAll('[data-ani=swing]').forEach(element => {
 
     observerswing.observe(element);
 });
 
-document.querySelectorAll('[data-as=tada]').forEach(element => {
+document.querySelectorAll('[data-ani=tada]').forEach(element => {
 
     observertada.observe(element);
 });
 
-document.querySelectorAll('[data-as=wobble]').forEach(element => {
+document.querySelectorAll('[data-ani=wobble]').forEach(element => {
 
     observerwobble.observe(element);
 });
 
-document.querySelectorAll('[data-as=jello]').forEach(element => {
+document.querySelectorAll('[data-ani=jello]').forEach(element => {
 
     observerjello.observe(element);
 });
 
-document.querySelectorAll('[data-as=heartbeat]').forEach(element => {
+document.querySelectorAll('[data-ani=heartbeat]').forEach(element => {
 
     observerheartbeat.observe(element);
 });
 
 // back entrances
-document.querySelectorAll('[data-as=backindown]').forEach(element => {
+document.querySelectorAll('[data-ani=backindown]').forEach(element => {
 
     observerbackindown.observe(element);
 });
 
-document.querySelectorAll('[data-as=backinleft]').forEach(element => {
+document.querySelectorAll('[data-ani=backinleft]').forEach(element => {
 
     observerbackinleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=backinright]').forEach(element => {
+document.querySelectorAll('[data-ani=backinright]').forEach(element => {
 
     observerbackinright.observe(element);
 });
 
-document.querySelectorAll('[data-as=backinup]').forEach(element => {
+document.querySelectorAll('[data-ani=backinup]').forEach(element => {
 
     observerbackinup.observe(element);
 });
 
 // back exits
-document.querySelectorAll('[data-as=backoutdown]').forEach(element => {
+document.querySelectorAll('[data-ani=backoutdown]').forEach(element => {
 
     observerbackoutdown.observe(element);
 });
 
-document.querySelectorAll('[data-as=backoutleft]').forEach(element => {
+document.querySelectorAll('[data-ani=backoutleft]').forEach(element => {
 
     observerbackoutleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=backoutright]').forEach(element => {
+document.querySelectorAll('[data-ani=backoutright]').forEach(element => {
 
     observerbackoutright.observe(element);
 });
 
-document.querySelectorAll('[data-as=backoutup]').forEach(element => {
+document.querySelectorAll('[data-ani=backoutup]').forEach(element => {
 
     observerbackoutup.observe(element);
 });
 
 // bouncing entrances
-document.querySelectorAll('[data-as=bouncein]').forEach(element => {
+document.querySelectorAll('[data-ani=bouncein]').forEach(element => {
 
     observerbouncein.observe(element);
 });
 
-document.querySelectorAll('[data-as=bounceindown]').forEach(element => {
+document.querySelectorAll('[data-ani=bounceindown]').forEach(element => {
 
     observerbounceindown.observe(element);
 });
 
-document.querySelectorAll('[data-as=bounceinleft]').forEach(element => {
+document.querySelectorAll('[data-ani=bounceinleft]').forEach(element => {
 
     observerbounceinleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=bounceinright]').forEach(element => {
+document.querySelectorAll('[data-ani=bounceinright]').forEach(element => {
 
     observerbounceinright.observe(element);
 });
 
-document.querySelectorAll('[data-as=bounceinup]').forEach(element => {
+document.querySelectorAll('[data-ani=bounceinup]').forEach(element => {
 
     observerbounceinup.observe(element);
 });
 
 // bouncing exits
-document.querySelectorAll('[data-as=bounceout]').forEach(element => {
+document.querySelectorAll('[data-ani=bounceout]').forEach(element => {
 
     observerbounceout.observe(element);
 });
 
-document.querySelectorAll('[data-as=bounceoutdown]').forEach(element => {
+document.querySelectorAll('[data-ani=bounceoutdown]').forEach(element => {
 
     observerbounceoutdown.observe(element);
 });
 
-document.querySelectorAll('[data-as=bounceoutleft]').forEach(element => {
+document.querySelectorAll('[data-ani=bounceoutleft]').forEach(element => {
 
     observerbounceoutleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=bounceoutright]').forEach(element => {
+document.querySelectorAll('[data-ani=bounceoutright]').forEach(element => {
 
     observerbounceoutright.observe(element);
 });
 
-document.querySelectorAll('[data-as=bounceoutup]').forEach(element => {
+document.querySelectorAll('[data-ani=bounceoutup]').forEach(element => {
 
     observerbounceoutup.observe(element);
 });
 
 // fading entrances
-document.querySelectorAll('[data-as=fadein]').forEach(element => {
+document.querySelectorAll('[data-ani=fadein]').forEach(element => {
 
     observerfadein.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeindown]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeindown]').forEach(element => {
 
     observerfadeindown.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeindownbig]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeindownbig]').forEach(element => {
 
     observerfadeindownbig.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeinleft]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeinleft]').forEach(element => {
 
     observerfadeinleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeinleftbig]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeinleftbig]').forEach(element => {
 
     observerfadeinleftbig.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeinright]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeinright]').forEach(element => {
 
     observerfadeinright.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeinrightbig]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeinrightbig]').forEach(element => {
 
     observerfadeinrightbig.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeinup]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeinup]').forEach(element => {
 
     observerfadeinup.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeinupbig]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeinupbig]').forEach(element => {
 
     observerfadeinupbig.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeintopleft]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeintopleft]').forEach(element => {
 
     observerfadeintopleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeintopright]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeintopright]').forEach(element => {
 
     observerfadeintopright.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeinbottomleft]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeinbottomleft]').forEach(element => {
 
     observerfadeinbottomleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeinbottomright]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeinbottomright]').forEach(element => {
 
     observerfadeinbottomright.observe(element);
 });
 
 // fading exits
-document.querySelectorAll('[data-as=fadeout]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeout]').forEach(element => {
 
     observerfadeout.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeoutdown]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeoutdown]').forEach(element => {
 
     observerfadeoutdown.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeoutdownbig]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeoutdownbig]').forEach(element => {
 
     observerfadeoutdownbig.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeoutleft]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeoutleft]').forEach(element => {
 
     observerfadeoutleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeoutleftbig]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeoutleftbig]').forEach(element => {
 
     observerfadeoutleftbig.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeoutright]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeoutright]').forEach(element => {
 
     observerfadeoutright.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeoutrightbig]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeoutrightbig]').forEach(element => {
 
     observerfadeoutrightbig.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeoutup]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeoutup]').forEach(element => {
 
     observerfadeoutup.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeoutupbig]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeoutupbig]').forEach(element => {
 
     observerfadeoutupbig.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeouttopleft]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeouttopleft]').forEach(element => {
 
     observerfadeouttopleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeouttopright]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeouttopright]').forEach(element => {
 
     observerfadeouttopright.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeoutbottomleft]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeoutbottomleft]').forEach(element => {
 
     observerfadeoutbottomleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=fadeoutbottomright]').forEach(element => {
+document.querySelectorAll('[data-ani=fadeoutbottomright]').forEach(element => {
 
     observerfadeoutbottomright.observe(element);
 });
 
 // flippers
-document.querySelectorAll('[data-as=flip]').forEach(element => {
+document.querySelectorAll('[data-ani=flip]').forEach(element => {
 
     observerflip.observe(element);
 });
 
-document.querySelectorAll('[data-as=flipinx]').forEach(element => {
+document.querySelectorAll('[data-ani=flipinx]').forEach(element => {
 
     observerflipinx.observe(element);
 });
 
-document.querySelectorAll('[data-as=flipiny]').forEach(element => {
+document.querySelectorAll('[data-ani=flipiny]').forEach(element => {
 
     observerflipiny.observe(element);
 });
 
-document.querySelectorAll('[data-as=flipoutx]').forEach(element => {
+document.querySelectorAll('[data-ani=flipoutx]').forEach(element => {
 
     observerflipoutx.observe(element);
 });
 
-document.querySelectorAll('[data-as=flipouty]').forEach(element => {
+document.querySelectorAll('[data-ani=flipouty]').forEach(element => {
 
     observerflipouty.observe(element);
 });
 
 // lightspeed
-document.querySelectorAll('[data-as=lightspeedinleft]').forEach(element => {
+document.querySelectorAll('[data-ani=lightspeedinleft]').forEach(element => {
 
     observerlightspeedinleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=lightspeedinright]').forEach(element => {
+document.querySelectorAll('[data-ani=lightspeedinright]').forEach(element => {
 
     observerlightspeedinright.observe(element);
 });
 
-document.querySelectorAll('[data-as=lightspeedoutleft]').forEach(element => {
+document.querySelectorAll('[data-ani=lightspeedoutleft]').forEach(element => {
 
     observerlightspeedoutleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=lightspeedoutright]').forEach(element => {
+document.querySelectorAll('[data-ani=lightspeedoutright]').forEach(element => {
 
     observerlightspeedoutright.observe(element);
 });
 
 // rotating entrances
-document.querySelectorAll('[data-as=rotatein]').forEach(element => {
+document.querySelectorAll('[data-ani=rotatein]').forEach(element => {
 
     observerrotatein.observe(element);
 });
 
-document.querySelectorAll('[data-as=rotateindownleft]').forEach(element => {
+document.querySelectorAll('[data-ani=rotateindownleft]').forEach(element => {
 
     observerrotateindownleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=rotateindownright]').forEach(element => {
+document.querySelectorAll('[data-ani=rotateindownright]').forEach(element => {
 
     observerrotateindownright.observe(element);
 });
 
-document.querySelectorAll('[data-as=rotateinupleft]').forEach(element => {
+document.querySelectorAll('[data-ani=rotateinupleft]').forEach(element => {
 
     observerrotateinupleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=rotateinupright]').forEach(element => {
+document.querySelectorAll('[data-ani=rotateinupright]').forEach(element => {
 
     observerrotateinupright.observe(element);
 });
 
 // rotating exits
-document.querySelectorAll('[data-as=rotateout]').forEach(element => {
+document.querySelectorAll('[data-ani=rotateout]').forEach(element => {
 
     observerrotateout.observe(element);
 });
 
-document.querySelectorAll('[data-as=rotateoutdownleft]').forEach(element => {
+document.querySelectorAll('[data-ani=rotateoutdownleft]').forEach(element => {
 
     observerrotateoutdownleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=rotateoutdownright]').forEach(element => {
+document.querySelectorAll('[data-ani=rotateoutdownright]').forEach(element => {
 
     observerrotateoutdownright.observe(element);
 });
 
-document.querySelectorAll('[data-as=rotateoutupleft]').forEach(element => {
+document.querySelectorAll('[data-ani=rotateoutupleft]').forEach(element => {
 
     observerrotateoutupleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=rotateoutupright]').forEach(element => {
+document.querySelectorAll('[data-ani=rotateoutupright]').forEach(element => {
 
     observerrotateoutupright.observe(element);
 });
 
 // specials
-document.querySelectorAll('[data-as=hinge]').forEach(element => {
+document.querySelectorAll('[data-ani=hinge]').forEach(element => {
 
     observerhinge.observe(element);
 });
 
-document.querySelectorAll('[data-as=jackinthebox]').forEach(element => {
+document.querySelectorAll('[data-ani=jackinthebox]').forEach(element => {
 
     observerjackinthebox.observe(element);
 });
 
-document.querySelectorAll('[data-as=rollin]').forEach(element => {
+document.querySelectorAll('[data-ani=rollin]').forEach(element => {
 
     observerrollin.observe(element);
 });
 
-document.querySelectorAll('[data-as=rollout]').forEach(element => {
+document.querySelectorAll('[data-ani=rollout]').forEach(element => {
 
     observerrollout.observe(element);
 });
 
 // zooming entrances
-document.querySelectorAll('[data-as=zoomin]').forEach(element => {
+document.querySelectorAll('[data-ani=zoomin]').forEach(element => {
 
     observerzoomin.observe(element);
 });
 
-document.querySelectorAll('[data-as=zoomindown]').forEach(element => {
+document.querySelectorAll('[data-ani=zoomindown]').forEach(element => {
 
     observerzoomindown.observe(element);
 });
 
-document.querySelectorAll('[data-as=zoominleft]').forEach(element => {
+document.querySelectorAll('[data-ani=zoominleft]').forEach(element => {
 
     observerzoominleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=zoominright]').forEach(element => {
+document.querySelectorAll('[data-ani=zoominright]').forEach(element => {
 
     observerzoominright.observe(element);
 });
 
-document.querySelectorAll('[data-as=zoominup]').forEach(element => {
+document.querySelectorAll('[data-ani=zoominup]').forEach(element => {
 
     observerzoominup.observe(element);
 });
 
 // zooming exits
-document.querySelectorAll('[data-as=zoomout]').forEach(element => {
+document.querySelectorAll('[data-ani=zoomout]').forEach(element => {
 
     observerzoomout.observe(element);
 });
 
-document.querySelectorAll('[data-as=zoomoutdown]').forEach(element => {
+document.querySelectorAll('[data-ani=zoomoutdown]').forEach(element => {
 
     observerzoomoutdown.observe(element);
 });
 
-document.querySelectorAll('[data-as=zoomoutleft]').forEach(element => {
+document.querySelectorAll('[data-ani=zoomoutleft]').forEach(element => {
 
     observerzoomoutleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=zoomoutright]').forEach(element => {
+document.querySelectorAll('[data-ani=zoomoutright]').forEach(element => {
 
     observerzoomoutright.observe(element);
 });
 
-document.querySelectorAll('[data-as=zoomoutup]').forEach(element => {
+document.querySelectorAll('[data-ani=zoomoutup]').forEach(element => {
 
     observerzoomoutup.observe(element);
 });
 
 // sliding entrances
-document.querySelectorAll('[data-as=slideindown]').forEach(element => {
+document.querySelectorAll('[data-ani=slideindown]').forEach(element => {
 
     observerslideindown.observe(element);
 });
 
-document.querySelectorAll('[data-as=slideinleft]').forEach(element => {
+document.querySelectorAll('[data-ani=slideinleft]').forEach(element => {
 
     observerslideinleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=slideinright]').forEach(element => {
+document.querySelectorAll('[data-ani=slideinright]').forEach(element => {
 
     observerslideinright.observe(element);
 });
 
-document.querySelectorAll('[data-as=slideinup]').forEach(element => {
+document.querySelectorAll('[data-ani=slideinup]').forEach(element => {
 
     observerslideinup.observe(element);
 });
 
 // sliding exits
-document.querySelectorAll('[data-as=slideoutdown]').forEach(element => {
+document.querySelectorAll('[data-ani=slideoutdown]').forEach(element => {
 
     observerslideoutdown.observe(element);
 });
 
-document.querySelectorAll('[data-as=slideoutleft]').forEach(element => {
+document.querySelectorAll('[data-ani=slideoutleft]').forEach(element => {
 
     observerslideoutleft.observe(element);
 });
 
-document.querySelectorAll('[data-as=slideoutright]').forEach(element => {
+document.querySelectorAll('[data-ani=slideoutright]').forEach(element => {
 
     observerslideoutright.observe(element);
 });
 
-document.querySelectorAll('[data-as=slideoutup]').forEach(element => {
+document.querySelectorAll('[data-ani=slideoutup]').forEach(element => {
 
     observerslideoutup.observe(element);
 });
@@ -1079,6 +1079,7 @@ function backindown(entries) {
 
         entry.target.classList.add('animate__animated');
         entry.target.style.visibility = "hidden";
+        
         // prevratio = 0.0;
 
         /* fade

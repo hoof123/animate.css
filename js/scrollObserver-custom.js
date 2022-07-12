@@ -8,7 +8,7 @@ let prevratio = 0.0;
 // observer options
 let observeroptions = {
     
-    root: document.querySelectorAll('.as-container')[0],
+    root: document.querySelectorAll('.ani-container')[0],
     rootmargin: "-200px 0px -200px 0px",
     threshold: buildthresholdlist()
 };
