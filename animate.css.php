@@ -23,10 +23,22 @@ function animate_enqueue_scripts() {
     wp_enqueue_style('animate-custom-css');
 
     // intersection api
-    wp_register_script('scrollObserver', plugin_dir_url( __FILE__ ) . 'js/scrollObserver.min.js', 1.0, false);
-    wp_enqueue_script('scrollObserver');
 
-    // intersection api custom
-    wp_register_script('scrollObserver-custom', plugin_dir_url( __FILE__ ) . 'js/scrollObserver-custom.js', 1.0, false);
-    wp_enqueue_script('scrollObserver-custom');
+        // data attribute based
+        // wp_register_script('scrollObserver-data', plugin_dir_url( __FILE__ ) . 'js/scrollObserver-data.js', 1.0, false); // regular
+        // wp_register_script('scrollObserver-data', plugin_dir_url( __FILE__ ) . 'js/scrollObserver-data.min.js', 1.0, false); // min
+        // wp_enqueue_script('scrollObserver-data');
+    
+        // class based
+        // wp_register_script('scrollObserver-class', plugin_dir_url( __FILE__ ) . 'js/scrollObserver-class.js', 1.0, false); // regular
+        wp_register_script('scrollObserver-class', plugin_dir_url( __FILE__ ) . 'js/scrollObserver-class.min.js', 1.0, false); // min
+        wp_enqueue_script('scrollObserver-class');
+
+    // intersection api custom - data attribute based
+    // wp_register_script('scrollObserver-custom-data', plugin_dir_url( __FILE__ ) . 'js/scrollObserver-custom-data.js', 1.0, false);
+    // wp_enqueue_script('scrollObserver-custom-data');
+
+    // intersection api custom - class based
+    wp_register_script('scrollObserver-custom-class', plugin_dir_url( __FILE__ ) . 'js/scrollObserver-custom-class.js', 1.0, false);
+    wp_enqueue_script('scrollObserver-custom-class');
 }
